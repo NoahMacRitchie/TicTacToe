@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+    <body style="background: #222222; color: #fff;">
+        <h1>TicTacToe</h1>
+        <p>
+            Welcome to our too good to be true tic tac toe electron client :)
+        </p>
+        <div><h3 id="team-name"></h3></div>
+
+        <input type="text" placeholder="Enter here" id="test" />
+        <button onclick="submit()">Submit</button>
+    
+    <!-- <script>
+        const { ipcRenderer } = require('electron')
+        
+        function submit(){ 
+            ipcRenderer.sendSync('test', document.getElementById("test").value)
+
+        }
+
+        ipcRenderer.on("game-start", (event, data) => {
+            console.log(data);
+            if(data == "NX"){
+                document.body.setAttribute("style", "background: #555555");
+                console.log("here")
+            }
+        });
+
+        ipcRenderer.on("game-start", (event, data) => {
+            console.log(data);
+            if(data == "NX"){
+                document.body.setAttribute("style", "background: #555555");
+                console.log("here")
+            }
+        });
+        
+       
+        
+
+    </script> -->
+    <script src="renderer.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+body{
+  background-color: #374045;
+  color: #e1d89f;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.cell {
+  background-color: #49545B;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 5px solid #374045; 
+}
+
+h1{
+  color: #D89336;
+}
+
+#status{
+  margin-left: 145px;
+}
